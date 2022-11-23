@@ -549,7 +549,7 @@
 
             if (document.querySelector('#charging').value === 'charging') {
                 var myGreetint = setInterval(myGreeting, 900);
-                if (document.querySelector("#loc").value != document.querySelector("#demo").innerText) {
+                if (document.querySelector("#loc").value != localStorage.getItem("locstore")) {
                     document.querySelector('audio').play();
                 }
             }
