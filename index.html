@@ -564,7 +564,13 @@
 
             }
             else {
-                document.querySelector('audio').pause();
+
+                if (document.querySelector("#loc").value != localStorage.getItem("locstore")) {
+                    document.querySelector('audio').play();
+
+                } else {
+                    document.querySelector('audio').pause();
+                }
             }
         }
         function toggleplay() {
